@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.1424.0",
+    "uuid": "^9.0.0"
+  },
+  "name": "aws-lambda-crud-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lautaro Decimak",
+  "license": "ISC"
+}

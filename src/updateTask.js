@@ -6,7 +6,6 @@ const updateTask = async (event) => {
         const { id } = event.pathParameters
         const { done, title, description } = JSON.parse(event.body)
 
-
         const result = await dynamodb.update({
             TableName: 'TaskTable',
             Key: { id },

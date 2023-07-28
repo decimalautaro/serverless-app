@@ -14,7 +14,8 @@ const addTask = async (event) =>{
         id,
         title,
         description,
-        createdAt
+        createdAt,
+        done: false
     }
 
     await dynamodb.put({

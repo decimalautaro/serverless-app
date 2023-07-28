@@ -30,7 +30,13 @@ functions:
     events:
       - httpApi:
           path: /tasks
-          method: get                  
+          method: get    
+  getByIdTask:
+    handler: src/getByIdTask.getByIdTask
+    events:
+      - httpApi:
+          path: /tasks/{id}
+          method: get                 
 
 resources:
   Resources:

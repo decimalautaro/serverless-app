@@ -5,8 +5,6 @@ const getByIdTask = async (event) => {
     const dynamodb = new AWS.DynamoDB.DocumentClient()
     const { id } = event.pathParameters
 
-    console.log("id------->",id)
-
     const result = await dynamodb.get({
         TableName: 'TaskTable',
         Key: {
@@ -14,11 +12,7 @@ const getByIdTask = async (event) => {
         }
     }).promise()
 
-    console.log("------->",result)
-
     const task = result.Item
-
-    console.log("task---->",task)
 
     return {
         status: 200,
